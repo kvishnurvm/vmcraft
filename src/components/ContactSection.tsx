@@ -259,7 +259,7 @@ const ContactSection = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {/* Brand */}
             <div className="lg:col-span-1">
-              <h4 className="font-serif text-xl gold-gradient-text mb-3">Vishnumohan</h4>
+              <h4 className="font-serif text-xl gold-gradient-text mb-3">VM Crafts</h4>
               <p className="text-muted-foreground text-xs leading-relaxed">
                 Freelance web developer crafting stunning static &amp; dynamic websites from Bangalore, India.
               </p>
