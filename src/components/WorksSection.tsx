@@ -2,33 +2,33 @@ import { motion } from "framer-motion";
 import { ExternalLink, ArrowUpRight } from "lucide-react";
 
 const projects = [
-  { 
-    title: "Icanexa", 
-    url: "https://icanexa.in", 
-    tags: ["React", ".NET", "PostgreSQL"], 
+  {
+    title: "Icanexa",
+    url: "https://icanexa.in",
+    tags: ["React", ".NET", "PostgreSQL"],
     desc: "Enterprise web platform with comprehensive digital solutions",
-    type: "Enterprise Platform"
+    type: "Education"
   },
-  { 
-    title: "CS Reality", 
-    url: "https://csreality.in", 
-    tags: ["Next.js", "Strapi", "Cloudflare"], 
+  {
+    title: "CS Reality",
+    url: "https://csreality.in",
+    tags: ["Next.js", "Strapi", "Cloudflare"],
     desc: "Real estate digital platform with property management",
     type: "Real Estate"
   },
-  { 
-    title: "XcelVend", 
-    url: "https://xcelvend.com", 
-    tags: ["React", "Node.js", "AWS"], 
-    desc: "E-commerce platform for seamless online shopping",
-    type: "E-Commerce"
+  {
+    title: "Xcelvend",
+    url: "https://xcelvend.com",
+    tags: ["React", "Node.js", "AWS"],
+    desc: "Specialized Distribution and End-to-End Roof Top Solar System Solutions",
+    type: "Complete Solar Energy Solutions"
   },
-  { 
-    title: "Haylah", 
-    url: "https://haylah.com", 
-    tags: ["Angular", "TypeScript", ".NET"], 
-    desc: "Business management suite for modern enterprises",
-    type: "Business Suite"
+  {
+    title: "Haylah",
+    url: "https://haylah.com",
+    tags: ["Angular", "TypeScript", ".NET"],
+    desc: "Specializing in IoT Dashboards and AI-Driven Solutions",
+    type: "SOFTWARE DEVELOPMENT"
   },
 ];
 
@@ -80,10 +80,10 @@ const WorksSection = () => {
               <div className="aspect-[16/10] bg-gradient-to-br from-accent to-secondary relative flex items-center justify-center overflow-hidden">
                 {/* Animated grid */}
                 <div className="absolute inset-0 grid-overlay opacity-30" />
-                
+
                 {/* Project name display */}
                 <div className="relative z-10 text-center">
-                  <motion.span 
+                  <motion.span
                     className="font-serif text-4xl md:text-5xl gold-gradient-text block"
                     initial={{ scale: 1 }}
                   >
@@ -118,11 +118,11 @@ const WorksSection = () => {
                 </div>
                 <p className="text-muted-foreground text-sm mb-4 font-sans">{p.desc}</p>
                 <div className="flex flex-wrap gap-2">
-                  {p.tags.map((tag) => (
+                  {/* {p.tags.map((tag) => (
                     <span key={tag} className="px-3 py-1 text-[10px] font-sans tracking-wider bg-accent text-muted-foreground rounded-full border border-border/50">
                       {tag}
                     </span>
-                  ))}
+                  ))} */}
                 </div>
               </div>
             </motion.a>

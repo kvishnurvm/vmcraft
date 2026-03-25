@@ -85,7 +85,7 @@ const HeroSection = ({ started = false }: { started?: boolean }) => {
   // Staggered delay base — waits for splash to finish
   const d = started ? 0 : 99;
 
-  const title = "Vishnumohan";
+  const title = "VM Crafts";
 
   return (
     <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden hero-gradient">
@@ -107,7 +107,7 @@ const HeroSection = ({ started = false }: { started?: boolean }) => {
 
       <motion.div style={{ y, opacity }} className="relative z-10 container mx-auto px-6 text-center">
         {/* Badge */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, scale: 0.8, y: 20 }}
           animate={started ? { opacity: 1, scale: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
@@ -116,7 +116,7 @@ const HeroSection = ({ started = false }: { started?: boolean }) => {
           <span className="inline-block px-4 py-1.5 border border-primary/30 rounded-full text-primary font-sans text-xs tracking-[0.3em] uppercase">
             Senior Full Stack Developer
           </span>
-        </motion.div>
+        </motion.div> */}
 
         {/* Hello text */}
         <div className="overflow-hidden mb-2">
@@ -126,7 +126,7 @@ const HeroSection = ({ started = false }: { started?: boolean }) => {
             transition={{ duration: 0.9, delay: 0.4, ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number] }}
             className="text-muted-foreground font-sans text-sm md:text-base tracking-[0.2em] uppercase"
           >
-            Hello, I'm
+            Welcome to
           </motion.p>
         </div>
 
@@ -171,7 +171,8 @@ const HeroSection = ({ started = false }: { started?: boolean }) => {
           transition={{ duration: 0.7, delay: 1.6 }}
           className="text-muted-foreground font-sans text-sm md:text-base tracking-wide mb-12 max-w-lg mx-auto"
         >
-          Full Stack Developer · Designer · 9+ Years of Crafting Premium Digital Solutions
+          {/* Full Stack Developer · Designer · 9+ Years of Crafting Premium Digital Solutions */}
+          Let's Build Something Meaningful
         </motion.p>
 
         {/* CTAs */}

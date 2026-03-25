@@ -1,69 +1,69 @@
 import { motion } from "framer-motion";
-import { 
+import {
   Code2, Server, Database, Cloud, Paintbrush, Search,
   Blocks, FileCode, Globe, Cpu, Layers, Zap
 } from "lucide-react";
 
 const techCategories = [
-  { 
-    title: "Frontend", 
+  {
+    title: "Frontend",
     icon: Code2,
     color: "from-blue-500/20 to-cyan-500/20",
     techs: [
       { name: "React", icon: Blocks },
       { name: "TypeScript", icon: FileCode },
       { name: "Angular", icon: Zap },
-      { name: "Next.js", icon: Globe },
+      // { name: "Next.js", icon: Globe },
       { name: "Tailwind CSS", icon: Layers },
     ]
   },
-  { 
-    title: "Backend", 
+  {
+    title: "Backend",
     icon: Server,
     color: "from-emerald-500/20 to-green-500/20",
     techs: [
       { name: ".NET", icon: Cpu },
       { name: "Strapi", icon: Server },
       { name: "Node.js", icon: Zap },
-      { name: "Express", icon: Globe },
+      // { name: "Express", icon: Globe },
       { name: "REST APIs", icon: Layers },
     ]
   },
-  { 
-    title: "Database", 
+  {
+    title: "Database",
     icon: Database,
     color: "from-orange-500/20 to-amber-500/20",
     techs: [
       { name: "PostgreSQL", icon: Database },
-      { name: "MSSQL", icon: Database },
-      { name: "MySQL", icon: Database },
+      { name: "MS SQL", icon: Database },
+      { name: "My SQL", icon: Database },
       { name: "MongoDB", icon: Layers },
     ]
   },
-  { 
-    title: "Cloud & DevOps", 
+  {
+    title: "Cloud & DevOps",
     icon: Cloud,
     color: "from-purple-500/20 to-violet-500/20",
     techs: [
       { name: "Vercel", icon: Globe },
       { name: "Cloudflare", icon: Cloud },
       { name: "Supabase", icon: Database },
-      { name: "AWS", icon: Server },
+      { name: "Windows", icon: Server },
     ]
   },
-  { 
-    title: "Design", 
+  {
+    title: "Design",
     icon: Paintbrush,
     color: "from-pink-500/20 to-rose-500/20",
     techs: [
       { name: "Figma", icon: Paintbrush },
-      { name: "Photoshop", icon: Layers },
-      { name: "UI/UX", icon: Blocks },
-      { name: "Responsive", icon: Globe },
+      { name: "Adobe Photoshop", icon: Layers },
+      { name: "Adobe Illustrator", icon: Blocks },
+      { name: "Adobe InDesign", icon: Globe },
     ]
   },
-  { 
-    title: "SEO & Analytics", 
+  {
+    title: "SEO & Analytics",
     icon: Search,
     color: "from-primary/20 to-yellow-500/20",
     techs: [
@@ -150,7 +150,7 @@ const TechStackSection = () => {
             >
               {/* Gradient overlay on hover */}
               <div className={`absolute inset-0 bg-gradient-to-br ${cat.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
-              
+
               <div className="relative z-10 p-7">
                 <div className="flex items-center gap-3 mb-6">
                   <motion.div
@@ -162,7 +162,7 @@ const TechStackSection = () => {
                   </motion.div>
                   <h3 className="font-serif text-xl text-foreground">{cat.title}</h3>
                 </div>
-                
+
                 <div className="space-y-2">
                   {cat.techs.map((tech, j) => (
                     <motion.div

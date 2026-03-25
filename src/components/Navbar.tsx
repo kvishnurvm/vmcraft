@@ -26,14 +26,13 @@ const Navbar = () => {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
-        scrolled ? "bg-background/80 backdrop-blur-xl border-b border-border/50 shadow-lg shadow-background/20" : ""
-      }`}
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${scrolled ? "bg-background/80 backdrop-blur-xl border-b border-border/50 shadow-lg shadow-background/20" : ""
+        }`}
     >
       <div className="container mx-auto px-6 max-w-6xl flex items-center justify-between h-16">
         <a href="#" className="font-serif text-xl">
           <span className="gold-gradient-text">VM</span>
-          <span className="text-foreground/60 text-sm font-sans ml-1 hidden sm:inline">.dev</span>
+          <span className="text-foreground/60 text-sm font-sans ml-1 hidden sm:inline"> Crafts</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">

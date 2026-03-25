@@ -135,7 +135,7 @@ const ContactSection = () => {
                 <div>
                   <h3 className="font-sans text-sm tracking-wider uppercase text-foreground mb-2">Preferred Contact</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Please <span className="text-primary font-medium">WhatsApp first</span> before calling — 
+                    Please <span className="text-primary font-medium">WhatsApp first</span> before calling —
                     it helps me respond faster and keep track of your project details.
                   </p>
                   <div className="flex flex-wrap gap-3 mt-3">
@@ -184,7 +184,7 @@ const ContactSection = () => {
                   maxLength={100}
                   value={form.name}
                   onChange={handleChange}
-                  placeholder="John Doe"
+                  placeholder="Please enter your name"
                   className="w-full px-4 py-3 bg-background border border-border rounded-sm text-sm font-sans text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-primary/50 transition-colors"
                 />
               </div>
@@ -198,7 +198,7 @@ const ContactSection = () => {
                   maxLength={20}
                   value={form.phone}
                   onChange={handleChange}
-                  placeholder="+91 98765 43210"
+                  placeholder="Enter your contact number"
                   className="w-full px-4 py-3 bg-background border border-border rounded-sm text-sm font-sans text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-primary/50 transition-colors"
                 />
               </div>
@@ -313,7 +313,7 @@ const ContactSection = () => {
           {/* Bottom bar */}
           <div className="mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-muted-foreground/60 text-xs font-sans">
-              © {new Date().getFullYear()} Vishnumohan. All Rights Reserved.
+              © {new Date().getFullYear()} VM Crafts. All Rights Reserved.
             </p>
             <p className="text-muted-foreground/40 text-xs font-sans inline-flex items-center gap-1">
               Crafted with <Heart className="w-3 h-3 text-primary" /> by Vishnumohan

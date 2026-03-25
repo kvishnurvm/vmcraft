@@ -25,7 +25,7 @@ const AboutSection = () => {
     <section id="about" ref={sectionRef} className="section-padding relative overflow-hidden">
       {/* Background accent */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/[0.02] to-transparent pointer-events-none" />
-      
+
       <div className="container mx-auto px-6 max-w-6xl">
         {/* Chapter header */}
         <motion.div
@@ -61,7 +61,7 @@ const AboutSection = () => {
                   {/* Overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
                 </div>
-                
+
                 {/* Floating badge */}
                 <motion.div
                   initial={{ opacity: 0, scale: 0 }}
@@ -100,7 +100,7 @@ const AboutSection = () => {
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light mb-6">
               I'm <em className="gold-gradient-text italic">Vishnumohan</em>
             </h2>
-            
+
             <motion.div
               className="w-20 h-0.5 bg-gradient-to-r from-primary to-primary/0 mb-8"
               initial={{ scaleX: 0 }}
@@ -111,24 +111,24 @@ const AboutSection = () => {
             />
 
             <p className="text-foreground/90 leading-relaxed mb-4 font-sans text-base">
-              A passionate Full Stack Developer who transforms ideas into stunning digital experiences. 
+              A passionate Full Stack Developer who transforms ideas into stunning digital experiences.
               I build websites that don't just work — they <span className="text-primary font-medium">captivate</span>.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6 font-sans text-sm">
-              With over 9 years of crafting digital solutions, I specialize in building scalable, 
-              performant web applications — from elegant static sites to complex dynamic platforms. 
+              With over 9 years of crafting digital solutions, I specialize in building scalable,
+              performant web applications — from elegant static sites to complex dynamic platforms.
               Every pixel, every line of code is crafted with purpose.
             </p>
 
             <blockquote className="border-l-2 border-primary/40 pl-6 mb-10 py-2">
               <p className="text-foreground/70 italic font-serif text-lg leading-relaxed">
-                "I'm passionate about building meaningful technical solutions, contributing to impactful 
+                "I'm passionate about building meaningful technical solutions, contributing to impactful
                 projects, and continuously growing — beyond titles or roles."
               </p>
             </blockquote>
 
             {/* Mini Timeline */}
-            <div className="mb-10 space-y-3">
+            {/* <div className="mb-10 space-y-3">
               {timeline.map((item, i) => (
                 <motion.div
                   key={item.year}
@@ -143,7 +143,7 @@ const AboutSection = () => {
                   <span className="text-muted-foreground text-sm font-sans">{item.text}</span>
                 </motion.div>
               ))}
-            </div>
+            </div> */}
 
             {/* Stats */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">

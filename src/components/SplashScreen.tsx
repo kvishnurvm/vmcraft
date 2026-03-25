@@ -52,7 +52,7 @@ const SplashScreen = ({ onComplete }: { onComplete: () => void }) => {
                 animate={phase === "reveal" ? { scale: 1.2, opacity: 0 } : {}}
                 transition={{ duration: 0.6 }}
               >
-                VM
+                VM Crafts
               </motion.h1>
               <motion.p
                 className="text-muted-foreground font-sans text-xs tracking-[0.5em] uppercase mt-3"
@@ -60,7 +60,7 @@ const SplashScreen = ({ onComplete }: { onComplete: () => void }) => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.5 }}
               >
-                Portfolio
+                Crafting Digital Experiences
               </motion.p>
             </motion.div>
           </div>
