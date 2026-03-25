@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Logo from "./Logo";
 
 const navLinks = [
   { label: "Story", href: "#about" },
@@ -30,9 +31,8 @@ const Navbar = () => {
         }`}
     >
       <div className="container mx-auto px-6 max-w-6xl flex items-center justify-between h-16">
-        <a href="#" className="font-serif text-xl">
-          <span className="gold-gradient-text">VM</span>
-          <span className="text-foreground/60 text-sm font-sans ml-1 hidden sm:inline"> Crafts</span>
+        <a href="#" className="flex items-center">
+          <Logo size={28} showText={true} />
         </a>
 
         <div className="hidden md:flex items-center gap-8">

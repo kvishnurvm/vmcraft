@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Mail, MessageSquare, MapPin, Globe, Phone, Send, ArrowUpRight, Heart } from "lucide-react";
+import { Mail, MessageSquare, MapPin, Globe, Phone, Send, ArrowUpRight, Heart, Instagram } from "lucide-react";
+import Logo from "./Logo";
 
 const services = [
   "Static Website",
@@ -259,9 +260,11 @@ const ContactSection = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {/* Brand */}
             <div className="lg:col-span-1">
-              <h4 className="font-serif text-xl gold-gradient-text mb-3">VM Crafts</h4>
+              <div className="mb-4">
+                <Logo size={32} />
+              </div>
               <p className="text-muted-foreground text-xs leading-relaxed">
-                Freelance web developer crafting stunning static &amp; dynamic websites from Bangalore, India.
+                Premium digital agency specializing in high-end websites and digital craftsmanship. Based in Bangalore, India.
               </p>
             </div>
 
@@ -318,12 +321,30 @@ const ContactSection = () => {
             <p className="text-muted-foreground/40 text-xs font-sans inline-flex items-center gap-1">
               Crafted with <Heart className="w-3 h-3 text-primary" /> by Vishnumohan
             </p>
-            <div className="flex gap-6">
-              <a href="#" className="text-muted-foreground/60 hover:text-primary transition-colors text-xs inline-flex items-center gap-1">
+            <div className="flex flex-wrap justify-center gap-6">
+              <a 
+                href="https://linkedin.com/in/vishnumohan-a-77993811b" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground/60 hover:text-primary transition-colors text-xs inline-flex items-center gap-1"
+              >
                 LinkedIn <ArrowUpRight className="w-3 h-3" />
               </a>
-              <a href="#" className="text-muted-foreground/60 hover:text-primary transition-colors text-xs inline-flex items-center gap-1">
+              <a 
+                href="https://github.com/kvishnurvm" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground/60 hover:text-primary transition-colors text-xs inline-flex items-center gap-1"
+              >
                 GitHub <ArrowUpRight className="w-3 h-3" />
+              </a>
+              <a 
+                href="https://www.instagram.com/vishnumohan.frames?igsh=MTFwaGltcGxhZmUxaw%3D%3D&utm_source=qr" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground/60 hover:text-primary transition-colors text-xs inline-flex items-center gap-1"
+              >
+                Instagram <Instagram className="w-3 h-3" />
               </a>
             </div>
           </div>
